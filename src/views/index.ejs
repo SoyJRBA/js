@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Inicio de la plataforma</title>
+    <title>Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Bienvenidos <%= nombre%> </h1> 
-    <p1>Plataforma con express y javascript</p1>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/" class = "navbar-brand">Arte</a>
+    </nav>
+    <div class="container">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/add" method="POST">
+                        <div class="form-group">
+                        <input type="text" name = "Nombre" placeholder="Nombre Completo" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name = "Correo" placeholder="ejemplo@gmail.com" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name = "Contraseña" placeholder="Contraseña" class="form-control">
+                        </div>
+                        <button class = "btn btn-primary">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+
+        </div>
+    </div> 
 </body>
 </html>
